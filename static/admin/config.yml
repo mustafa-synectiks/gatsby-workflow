@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: https://github.com/mustafa-synectiks/gatsby-workflow.git
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -27,7 +28,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-  
+
   - name: "workflowpost"
     label: "Workflow Post"
     folder: "src/pages/workflowpost"
@@ -78,7 +79,7 @@ collections:
       - file: "src/pages/newexamples/index.md"
         label: "New Nxamples"
         name: "newexamples"
-        fields: 
+        fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "newexamples-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
