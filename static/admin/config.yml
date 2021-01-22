@@ -1,6 +1,7 @@
 backend:
   # name: git-gateway
-  name: git-gateway
+  name: github
+  repo: mustafa-synectiks/gatsby-workflow.git
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
